@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "BasePixel";
+  src: url("/fonts/BasePixel-HighResolution.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BasePixel";
+  src: url("/fonts/BasePixel-LowResolution.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BasePixel";
+  src: url("/fonts/BasePixel-MediumResolution.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BasePixel";
+  src: url("/fonts/BasePixel-ReducedResolution.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BasePixel";
+  src: url("/fonts/BasePixel-TrashResolution.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BasePixelVF";
+  src: url("/fonts/BasePixelVF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-base-pixel: BasePixel, sans-serif;
+}
+
+[data-testid="ockConnectButton"] {
+  background: #0050ff !important;
+}
+
+.ock-text-inverse {
+  color: #ffffff !important;
+  font-family: var(--font-base-pixel) !important;
+}
+
+.letter-box {
+  border: 1px solid rgb(47, 54, 63) !important;
+}
